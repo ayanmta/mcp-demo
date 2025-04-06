@@ -1,11 +1,22 @@
 {
-  "name": "mcpdemo",
+  "name": "weather-mcp-server",
   "version": "1.0.0",
-  "description": "testing my mcp server",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  }
 }
